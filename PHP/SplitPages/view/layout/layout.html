@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页练习</title>
+    <style>
+        table {
+            width: 400px;
+        }
+
+        caption {
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        #main {
+            width: 100%;
+            height: auto;
+        }
+
+        #main .page {
+            width: 400px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .page p {
+            text-align: center;
+        }
+
+        .page .btns{
+            display: flex;
+            width: 100%;
+        }
+
+        .page .btns .before {
+            flex: 1;
+        }
+
+        .page .btns .next {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <table border=4 width=250 align=center>
+            <caption>【号码归属地】</caption>
+            <!--1-->
+            <tr bgcolor="#cccccc">
+                <th>号段</th>
+                <th>归属地</th>
+                <th>运营商</th>
+            </tr>
+            <!--2-->
+            <tr align=center>
+                <td>1312203</td>
+                <td>上海</td>
+                <td>中国联通</td>
+            </tr>
+            <!--3-->
+            <tr align=center>
+                <td>行-2</td>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+            <!--4-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+            <!--5-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+            <!--6-->
+            <tr align=center>
+                <td>1312203</td>
+                <td>上海</td>
+                <td>中国联通</td>
+            </tr>
+            <!--7-->
+            <tr align=center>
+                <td>行-2</td>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+            <!--8-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+            <!--9-->
+            <tr align=center>
+                <td>行-2</td>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+            <!--10-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+            <!--11-->
+            <tr align="center">
+                <td>号段</td>
+                <td>归属地</td>
+                <td>运营商</td>
+            </tr>
+            <!--12-->
+            <tr align=center>
+                <td>1312203</td>
+                <td>上海</td>
+                <td>中国联通</td>
+            </tr>
+            <!--13-->
+            <tr align=center>
+                <td>行-2</td>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+            <!--14-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+            <!--15-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+            <!--16-->
+            <tr align=center>
+                <td>1312203</td>
+                <td>上海</td>
+                <td>中国联通</td>
+            </tr>
+            <!--17-->
+            <tr align=center>
+                <td>行-2</td>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+            <!--18-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+            <!--19-->
+            <tr align=center>
+                <td>行-2</td>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+            <!--20-->
+            <tr align=center>
+                <td>行-3</td>
+                <td>A3</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="page" value="1">
+            <p>第n页</p>
+            <div class="btns">
+                <button class="before">上一页</button>
+                <button class="next">下一页</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./view/js/jquery.min.js"></script>
+    <script src="./view/js/button.js"></script>
+</body>
+</html>
