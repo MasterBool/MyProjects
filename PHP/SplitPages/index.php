@@ -37,11 +37,15 @@
             flex: 1;
         }
 
+        .submit {
+            width: 100%;
+        }
+
         .page .btns .next {
             flex: 1;
         }
 
-        form {
+        #goto {
             width: 200px;
             margin: 20px auto;
         }
@@ -54,11 +58,27 @@
     <?php
     require_once "./model/FuncClass.php";
     $curPage = $_POST['page'];
-    if($curPage == null) $curPage = 1;
+    $prePage = null;
+    $nextPage = null;
+
+    if($curPage == null) {
+        $curPage = 1;
+        $nextPage = $curPage + 1;
+        $prePage = 1;
+    }
+    else if( $curPage == 1 ){
+        $nextPage = $curPage + 1;
+        $prePage = 1;
+    }
+    else {
+        $nextPage = $curPage + 1;
+        $prePage =$curPage - 1;
+    }
+
     $req = new FuncClass();
     $data = $req->getData($curPage);
     $tmp = "
-        <table border=4 width=250 align=center>
+    <table border=4 width=250 align=center>
         <caption>【号码归属地】</caption>
         <tr>
             <th>号段</th>
@@ -172,9 +192,17 @@
     $tmp = "
     <div class=\"page\">
         <p>第" . $curPage . "页</p>
+
         <div class=\"btns\">
-            <button class=\"pre\">上一页</button>
-            <button class=\"next\">下一页</button>
+            <form action=\"index.php\" method=\"post\" class=\"pre\">
+                <input type=\"text\" value=\"$prePage\" name=\"page\" style=\"display: none;\">
+                <input type=\"submit\" value=\"上一页\" class='submit'>
+            </form>
+
+            <form action=\"index.php\" method=\"post\" class=\"next\">
+                <input type=\"text\" value=\"$nextPage\" name=\"page\" style=\"display: none;\">
+                <input type=\"submit\" value=\"下一页\" class='submit'>
+            </form>
         </div>
     </div>
     ";
@@ -182,11 +210,12 @@
 
     ?>
 
-    <form action="index.php" method="post">
+    <form action="index.php" method="post" id="goto">
         跳转到第<input type="number" min="1" max="99" name="page">页
         <input type="submit">
     </form>
-
+    <script src="./view/js/jquery.min.js"></script>
+    <script src="./view/js/button.js"></script>
 </div>
 
 </body>
