@@ -38,8 +38,8 @@ function getView($realpath, $hostpath) {
 
 $realpath = $hostpath = null;
 if( $_GET['realpath'] == null ) {
-    $realpath = '/home/wwwroot/default/PhpWorkPlace/FileLoad/upload/files';
-    $hostpath = 'http://localhost/PhpWorkPlace/FileLoad/upload/files';
+    $realpath = '/home/wwwroot/default';
+    $hostpath = 'http://localhost';
 }
 else {
     $realpath = $_GET['realpath'];
