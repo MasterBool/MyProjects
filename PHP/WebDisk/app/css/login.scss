@@ -1,0 +1,55 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        margin-top: 8%;
+    }
+
+    #login {
+        width: 100%;
+
+        form {
+            width: 100%;
+
+            div.username {
+                display: block;
+                margin: 20px auto 5px;
+            }
+
+            #username {
+                display: inline-block;
+                margin-left: 44%;
+            }
+
+            div.password {
+                display: block;
+                margin: 5px auto 10px;
+            }
+
+            #password {
+                display: inline-block;
+                margin-left: 44%;
+            }
+
+            .btn-group {
+                display: flex;
+                width: 200px;
+                margin: 0 auto;
+                #login {
+                    flex: 9;
+                }
+                span {
+                    flex: 2;
+                }
+                #register {
+                    flex: 9;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+html {
+  height: 100%; }
+
+body {
+  width: 100%; }
+  body h1 {
+    text-align: center;
+    margin-top: 8%; }
+  body #login {
+    width: 100%; }
+    body #login form {
+      width: 100%; }
+      body #login form div.username {
+        display: block;
+        margin: 20px auto 5px; }
+      body #login form #username {
+        display: inline-block;
+        margin-left: 44%; }
+      body #login form div.password {
+        display: block;
+        margin: 5px auto 10px; }
+      body #login form #password {
+        display: inline-block;
+        margin-left: 44%; }
+      body #login form .btn-group {
+        display: flex;
+        width: 200px;
+        margin: 0 auto; }
+        body #login form .btn-group #login {
+          flex: 9; }
+        body #login form .btn-group span {
+          flex: 2; }
+        body #login form .btn-group #register {
+          flex: 9; }
+
+/*# sourceMappingURL=login.css.map */

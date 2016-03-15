@@ -1,0 +1,23 @@
+html {
+  height: 100%; }
+
+body {
+  width: 100%; }
+  body h1 {
+    text-align: center;
+    margin-top: 8%; }
+  body #login {
+    width: 100%; }
+    body #login form {
+      width: 100%; }
+      body #login form .input {
+        display: block;
+        margin: 20px auto; }
+      body #login form .btn-group {
+        width: 100px;
+        margin: 0 auto;
+        display: block; }
+        body #login form .btn-group .btn {
+          width: 100%; }
+
+/*# sourceMappingURL=register.css.map */
