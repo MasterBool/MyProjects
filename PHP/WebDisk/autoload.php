@@ -10,5 +10,6 @@ require_once "Common.Func.php";
 require_once "User.Func.php";
 require_once "CheckInput.Func.php";
 require_once "Mysql.Func.php";
+require_once "Image.Func.php";
 
 

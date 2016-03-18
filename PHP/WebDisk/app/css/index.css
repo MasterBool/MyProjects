@@ -1,0 +1,23 @@
+html {
+  height: 100%; }
+
+body {
+  width: 100%; }
+  body nav {
+    width: 100%; }
+    body nav #login {
+      float: right;
+      margin-right: 10%; }
+  body #main {
+    width: 1000px;
+    margin: 0 auto;
+    height: 800px; }
+    body #main .btn {
+      width: 100px;
+      margin-bottom: 40px; }
+    body #main .file {
+      background-image: url("../img/dir.png");
+      width: 63px;
+      height: 57px; }
+
+/*# sourceMappingURL=index.css.map */

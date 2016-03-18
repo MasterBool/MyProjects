@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+
+    nav {
+        width: 100%;
+
+        #login {
+            float: right;
+            margin-right: 10%;
+        }
+    }
+
+    #main {
+        width: 1000px;
+        margin: 0 auto;
+        height: 800px;
+
+        .btn {
+            width: 100px;
+            margin-bottom: 40px;
+        }
+
+        .file {
+            background-image: url("../img/dir.png");
+            width: 63px;
+            height: 57px;
+        }
+    }
+}

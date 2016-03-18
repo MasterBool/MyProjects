@@ -1,0 +1,25 @@
+<root>
+    <first name="bootstrap" type="dir">
+        <second name="css" type="dir">
+
+        </second>
+
+        <second name="js" type="dir">
+            <third name="bootstrap.js" type="file" id="1">
+
+            </third>
+
+            <third name="bootstrap.min.js" type="file" id="2">
+
+            </third>
+
+            <third name="npm.js" type="file" id="3">
+
+            </third>
+        </second>
+
+        <second name="fonts" type="dir">
+
+        </second>
+    </first>
+</root>

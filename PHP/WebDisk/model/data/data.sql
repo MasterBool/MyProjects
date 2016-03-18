@@ -33,3 +33,10 @@ CREATE TABLE File(
     category VARCHAR(10) NOT NULL
 );
 
+INSERT INTO File (file_name, path, md5, size, category) VALUES (
+    'npm.js',
+    '/home/wwwroot/default/PhpWorkPlace/WebDisk/app/upload/2016-03-17/npm.js',
+    '8015042d0b4ac125867af5b096b175ce',
+    '0.5',
+    'unkoown'
+);
